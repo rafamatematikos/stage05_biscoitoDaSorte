@@ -1,0 +1,114 @@
+/*ajustes gerais da página*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background: linear-gradient(320deg, #510361 0%,#BB00FF 100%);
+  font-size: 1.6rem;
+
+  display: grid;
+  grid-template-rows: 100%;
+  place-items: center;
+  height: 100vh;
+
+}
+
+main {
+  background: #fff;
+  box-shadow: 0 .2rem 5rem rgba(0, 0, 0, 0.8);
+  border-radius: .5rem;
+  width: min(42.8rem, 90%);
+  text-align: center;
+  padding: 4.8rem 6.4rem 6.4rem;
+  margin-top: -12rem;
+}
+
+.hide {
+  display: none;
+}
+
+/*Screen 1*/
+.screen1 h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1.4rem;
+}
+
+.screen1 p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.screen1 img:hover {
+  animation: shake 0.5s infinite alternate-reverse ;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/* Screen 2*/
+
+.screen2 h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #34355B;
+  margin-bottom: 1.7rem;
+}
+
+.screen2 p {
+  font-family: "Dancing Script", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+
+  background-color: #E4EDF1;
+  box-shadow: .2rem .2rem .2rem rgba(55, 55, 55, 0.5);
+  margin-bottom: 1.7rem;
+
+  position: relative;
+  animation: growthAnimation 2s ease-in-out forwards;
+}
+
+@keyframes growthAnimation {
+  from {transform: scale(0); opacity: 0;  top: 150px;}
+  to {transform: scale(1); opacity: 1; top: 0px;}
+}
+.screen2 img {
+  padding: 2.7rem 0;
+  margin-bottom: 1.7rem;
+}
+
+.screen2 button {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #FFFFFF;
+
+  background-color: #FF9500;
+  padding: 1.6rem;
+  border: none;
+  border-radius: .4rem;
+
+}
